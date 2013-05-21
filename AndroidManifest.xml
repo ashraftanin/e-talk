@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.etalkvone"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.etalkvone.Home"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.etalkvone.Dailyconversation"
+            android:label="@string/title_activity_dailyconversation" >
+        </activity>
+        <activity
+            android:name="com.example.etalkvone.Dictionary"
+            android:label="@string/title_activity_dictionary" >
+        </activity>
+        <activity
+            android:name="com.example.etalkvone.Games"
+            android:label="@string/title_activity_games" >
+        </activity>
+        <activity
+            android:name="com.example.etalkvone.Aboutus"
+            android:label="@string/title_activity_aboutus" >
+        </activity>
+        <activity
+            android:name="com.example.etalkvone.Askingforaroute"
+            android:label="@string/title_activity_askingforaroute" >
+        </activity>
+        <activity
+            android:name="com.example.etalkvone.Oderinginaresturant"
+            android:label="@string/title_activity_oderinginaresturant" >
+        </activity>
+        <activity
+            android:name="com.example.etalkvone.Takingacab"
+            android:label="@string/title_activity_takingacab" >
+        </activity>
+        <activity
+            android:name="com.example.etalkvone.Spellcheck"
+            android:label="@string/title_activity_spellcheck" >
+        </activity>
+        <activity
+            android:name="com.example.etalkvone.Seekcorrectsentence"
+            android:label="@string/title_activity_seekcorrectsentence" >
+        </activity>
+        <activity
+            android:name="com.example.etalkvone.Findcorrectword"
+            android:label="@string/title_activity_findcorrectword" >
+        </activity>
+    </application>
+
+</manifest>
