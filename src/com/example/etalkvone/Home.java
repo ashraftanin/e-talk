@@ -1,8 +1,11 @@
 package com.example.etalkvone;
 
+import java.io.IOException;
+
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
+import android.database.SQLException;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
@@ -47,6 +50,29 @@ public class Home extends Activity {
 	                startActivityForResult(myIntent, 0);
    				}
 	        });
+			
+			 DataBaseHelper myDbHelper = new DataBaseHelper(this);
+			 //myDbHelper = new DataBaseHelper(this);
+			  
+			 try {
+			  
+			 myDbHelper.createDataBase();
+			  
+			 } catch (IOException ioe) {
+			  
+			 throw new Error("Unable to create database");
+			  
+			 }
+			  
+			 try {
+			  
+			 myDbHelper.openDataBase();
+			  
+			 }catch(SQLException sqle){
+			  
+			 throw sqle;
+			  
+			 }
 	}
 
 	@Override

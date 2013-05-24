@@ -14,5 +14,6 @@
     <string name="title_activity_spellcheck">Spellcheck</string>
     <string name="title_activity_seekcorrectsentence">Seekcorrectsentence</string>
     <string name="title_activity_findcorrectword">Findcorrectword</string>
+    <string name="title_activity_demo">Demo</string>
 
 </resources>
