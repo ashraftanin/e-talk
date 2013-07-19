@@ -51,28 +51,6 @@ public class Home extends Activity {
    				}
 	        });
 			
-			 DataBaseHelper myDbHelper = new DataBaseHelper(this);
-			 //myDbHelper = new DataBaseHelper(this);
-			  
-			 try {
-			  
-			 myDbHelper.createDataBase();
-			  
-			 } catch (IOException ioe) {
-			  
-			 throw new Error("Unable to create database");
-			  
-			 }
-			  
-			 try {
-			  
-			 myDbHelper.openDataBase();
-			  
-			 }catch(SQLException sqle){
-			  
-			 throw sqle;
-			  
-			 }
 	}
 
 	@Override

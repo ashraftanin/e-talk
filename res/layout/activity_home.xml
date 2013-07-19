@@ -7,60 +7,54 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".Etalk" >
+    
 
-    <LinearLayout
-        android:id="@+id/linearLayout1"
+
+          <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="163dp"
+        android:layout_alignLeft="@+id/btnDailyConversation"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/logo" />
+ 
+
+    <Button
+        android:id="@+id/btnDictionary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentTop="true"
-        android:orientation="vertical" >
+        android:layout_alignLeft="@+id/btnDailyConversation"
+        android:layout_below="@+id/btnDailyConversation"
+        android:text="Dictionary"
+        android:width="500dp" />
 
-        <TextView
-            android:id="@+id/tvEtalk"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:text="eTalK"
-            android:textSize="80sp"
-            android:width="500dp" />
+    <Button
+        android:id="@+id/btnGames"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnDictionary"
+        android:layout_below="@+id/btnDictionary"
+        android:text="Games"
+        android:width="500dp" />
 
-        <Button
-            android:id="@+id/btnDailyConversation"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="22dp"
-            android:text="Daily Conversation"
-            android:width="500dp" />
+  
 
-        <Button
-            android:id="@+id/btnDictionary"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Dictionary"
-            android:width="500dp" />
+    <Button
+        android:id="@+id/btnDailyConversation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnAboutUs"
+        android:layout_below="@+id/imageView1"
+        android:text="Daily Conversation"
+        android:width="500dp" />
 
-        <Button
-            android:id="@+id/btnGames"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Games"
-            android:width="500dp" />
-
-        <Button
-            android:id="@+id/btnAboutUs"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="About_Us"
-            android:width="500dp" />
-
-        <TextView
-            android:id="@+id/TextView2"
-            android:layout_width="233dp"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:text="copy_right_etalk_all_rights_reserved_2013" />
-
-    </LinearLayout>
+    <Button
+        android:id="@+id/btnAboutUs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnGames"
+        android:text="About_Us"
+        android:width="500dp" />
 
 </RelativeLayout>

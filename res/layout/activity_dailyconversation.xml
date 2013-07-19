@@ -8,51 +8,51 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".Dailyconversation" >
 
-    <LinearLayout
+       <ImageView
+        android:id="@+id/imageView1"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
+        android:layout_height="163dp"
+        android:layout_alignLeft="@+id/btnDailyConversation"
         android:layout_alignParentTop="true"
-        android:orientation="vertical" >
-
-        <TextView
-            android:id="@+id/tvEtalk"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:text="eTalK"
-            android:textSize="80sp" />
+        android:src="@drawable/logo" />
 
         <Button
             android:id="@+id/btnHome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/imageView1"
             android:text="Home"
             android:width="500dp" />
 
         <Button
-            android:id="@+id/btnAskingForARoute"
+            android:id="@+id/btn_intro"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Asking For A Route"
+            android:layout_alignLeft="@+id/btnHome"
+            android:layout_below="@+id/btnHome"
+            android:onClick="IntroductionActivity"
+            android:text="Introduction"
             android:width="500dp" />
 
         <Button
-            android:id="@+id/btnOrderingInAResturant"
+            android:id="@+id/btnShopping"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ordering In A Resturant"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/btn_intro"
+            android:onClick="ShoppingActivity"
+            android:text="Go to Shopping"
             android:width="500dp" />
 
         <Button
-            android:id="@+id/btnTakingACab"
+            android:id="@+id/btn_orderMeal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Taking A Cab"
+            android:layout_alignLeft="@+id/btnShopping"
+            android:layout_below="@+id/btnShopping"
+            android:onClick="OrderMealActivity"
+            android:text="Order in resturant"
             android:width="500dp" />
-
-    </LinearLayout>
 
 </RelativeLayout>

@@ -17,38 +17,10 @@
         android:layout_alignParentTop="true"
         android:orientation="vertical" >
 
-        <TextView
-            android:id="@+id/tvEtalk"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:text="eTalK"
-            android:textSize="80sp" >
+      
 
-            <requestFocus />
-        </TextView>
+       
 
-        <EditText
-            android:id="@+id/etTypeHere"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:textSize="30sp" />
-
-        <TextView
-            android:id="@+id/tvTranslation"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:text="Translation"
-            android:textSize="30sp" />
-
-        <Button
-            android:id="@+id/btnHome"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Home"
-            android:width="500dp" />
 
     </LinearLayout>
 

@@ -8,37 +8,38 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".Games" >
 
-    <LinearLayout
+       <ImageView
+        android:id="@+id/imageView1"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
+        android:layout_height="163dp"
+        android:layout_alignLeft="@+id/btnDailyConversation"
         android:layout_alignParentTop="true"
-        android:orientation="vertical" >
+        android:src="@drawable/logo" />
 
-        <TextView
-            android:id="@+id/txtEtalk"
-            android:layout_width="match_parent"
+        <Button
+            android:id="@+id/btnHome"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:text="eTalK"
-            android:textSize="80sp" >
+            android:layout_alignLeft="@+id/imageView1"
+            android:layout_below="@+id/imageView1"
+            android:text="Home"
+            android:width="500dp" />
 
-            <requestFocus />
-        </TextView>
-        
-       <Button
-           android:id="@+id/btnHome"
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:text="Home"
-           android:width="500dp" />
+        <Button
+            android:id="@+id/btnFindCorrectWord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btnSeekCorrectSentence"
+            android:layout_below="@+id/btnSeekCorrectSentence"
+            android:text="Find Correct Word"
+            android:width="500dp" />
 
         <Button
             android:id="@+id/btnSpellCheck"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btnHome"
+            android:layout_below="@+id/btnHome"
             android:text="Spell Check"
             android:width="500dp" />
 
@@ -46,16 +47,9 @@
             android:id="@+id/btnSeekCorrectSentence"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btnSpellCheck"
+            android:layout_below="@+id/btnSpellCheck"
             android:text="Seek Correct Sentence"
             android:width="500dp" />
-
-        <Button
-            android:id="@+id/btnFindCorrectWord"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Find Correct Word"
-            android:width="500dp" />
-
-    </LinearLayout>
 
 </RelativeLayout>

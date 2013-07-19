@@ -8,36 +8,31 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".Aboutus" >
 
-    <LinearLayout
+    <ImageView
+        android:id="@+id/imageView1"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
+        android:layout_height="163dp"
+        android:layout_alignLeft="@+id/btnDailyConversation"
         android:layout_alignParentTop="true"
-        android:orientation="vertical" >
-
-        <TextView
-            android:id="@+id/tvEtalk"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:text="eTalK"
-            android:textSize="80sp" />
-
-        <TextView
-            android:id="@+id/tvAboutus"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:text="eTalK is a project under course SEPAII. Features: Dictionary, Daily Conversation, and Games" />
+        android:src="@drawable/logo" />
 
         <Button
             android:id="@+id/btnHome"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/imageView1"
+            android:layout_marginTop="71dp"
             android:text="Home"
             android:width="500dp" />
-    </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvAboutus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageView1"
+            android:layout_below="@+id/imageView1"
+            android:ems="10"
+            android:text="eTalK is a project under course SEPAII. Features: Dictionary, Daily Conversation, and Games" />
 
 </RelativeLayout>
